@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Terranaut <%= "| #{@page_title}" if @page_title %></title>
+    <%= stylesheet_link_tag "application", media: "all" %>
+    <meta name="author" content="Fweemzle Industries">
+    <%= javascript_include_tag "application" %>
+    <%= filepicker_js_include_tag %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+    <div id="wrapper"> 
+      <!-- header  -->
+      <header class="row-fluid clearfix">
+        <%= render(:partial => 'shared/header') %>
+      </header>
+
+      <!-- main -->
+      <div id="main" class="row-fluid clearfix container-background">
+        <% flash.each do |key, value| %>
+          <div class="alert alert-<%= key %>"><%= value %></div>
+        <% end %>
+
+        <div id="content">
+          <%= yield %>
+        </div>
+      </div> <!-- end main -->
+
+      <!-- footer -->
+      <div class="row-fluid clearfix" id="footer">
+        <%= render(:partial => 'shared/footer') %>
+      </div> <!-- end footer -->
+    </div><!--  end wrapper  -->
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!-- footer -->
+<div class="navbar">
+  <div class="navbar-inner clearfix">
+    <div id="footer-logo-section">
+      <%= link_to image_tag('wonk-face-trans-bg-inverted.png', :class => 'header-image'), :controller => 'topics', :action => 'list' %>
+    </div>
+    <!-- begin ul -->
+    <ul class="nav" id="footer-link-section"> <!-- was span 8 -->
+      <!-- NOTE: these <li> elements have to be listed in reverse order here because they are float:right -->
+      <li class="copyright">
+          <!-- &copy; -->Wonker, Inc.<!-- &trade;  --> 
+      </li>
+      <li class="contact">
+        <%= link_to("Contact", {:controller => 'public', :action => 'contact'}) %>
+      </li>
+      <li>
+        <% if signed_in? %>
+        <!-- link to user edit action -->
+          <%= link_to("My Account", {:controller => 'users', :action => 'edit', :id => current_user.id }) %>
+        <% else %>
+        <!-- link to sessions new action -->
+          <%= link_to("My Account", {:controller => 'users', :action => 'edit_attempt'}) %>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to("About", {:controller => 'public', :action => 'about'}) %>
+      </li>
+    </ul> <!-- end ul  -->
+  </div> <!-- end navbar-inner --> 
+</div> <!-- end navbar -->
