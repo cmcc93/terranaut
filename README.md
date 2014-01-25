@@ -1,4 +1,4 @@
 # Terranaut
 
-[*Terranaut*](http://www.google.com) is a web app built to be a home for user-generated and user-aggregated explanations of trends in policy-related and politics-related news.
+[*Terranaut*](http://www.google.com) is a web app intended to connect folks seeking adventure gear temporarily with folks who are willing to rent it to them.
 Built by [Fweemzle Industries](http://www.howstuffworks.com).
