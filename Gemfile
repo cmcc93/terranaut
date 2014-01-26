@@ -43,3 +43,7 @@ gem 'truncate_html'
 group :development do
   gem 'annotate', '2.5.0'
 end
+
+group :development do
+  gem 'rails_12factor', group: :production
+end

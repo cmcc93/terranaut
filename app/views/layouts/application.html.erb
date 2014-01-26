@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <title>Terranaut <%= "| #{@page_title}" if @page_title %></title>
     <%= stylesheet_link_tag "application", media: "all" %>
+    
     <meta name="author" content="Fweemzle Industries">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <%= javascript_include_tag "application" %>
-    <%= filepicker_js_include_tag %>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     <%= csrf_meta_tags %>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   </head>
 
   <body>
@@ -28,9 +40,16 @@
       </div> <!-- end main -->
 
       <!-- footer -->
-      <div class="row-fluid clearfix" id="footer">
-        <%= render(:partial => 'shared/footer') %>
-      </div> <!-- end footer -->
+      <!-- <div class="row-fluid clearfix" id="footer"> -->
+      <!-- line below had erb tags with equals sign -->
+        <!-- render(:partial => 'shared/footer') -->
+      <!-- </div>  -->
+      <!-- end footer -->
     </div><!--  end wrapper  -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
