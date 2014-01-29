@@ -50,3 +50,61 @@ $fontVeryBig: 35px;
 #main {
   margin-top: 50px;
 }
+
+// header-area
+.header-area {
+  position: relative;
+  z-index: 1;
+}
+  .header-area h1 {
+    text-align: center;
+    font-size: $fontVeryBig;
+    font-weight: bold;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  }
+  .header-area h2 {
+    text-align: center;
+    font-size: $fontBig;
+    margin-top: 0px;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  }
+// main-nav
+.main-nav .right-links a {
+  font-size: $fontSmall;
+  line-height: $fontBig;
+  margin-right: 15px;
+}
+.main-nav .navbar-form .form-control {
+  height: 34px;
+  margin-top: 0px;
+  width: 200px;
+}
+.main-nav button.search {
+  margin-right: 20px;
+  margin-top: 0px;
+  padding-right: 15px;
+  font-weight: bold;
+  font-size: $fontVerySmall;
+}
+// carousel
+#my-carousel {
+  position: relative;
+  top: -110px;
+}
+#my-carousel .carousel-inner .item {
+  margin: 0 auto;
+}
+  #my-carousel img {
+    width: 100%;
+    height: 750px;
+  }
+  #my-carousel .carousel-control {
+    margin-top: 200px;
+  }
+  #my-carousel .carousel-caption {
+    margin-bottom: 100px;
+    border-radius: 15px;
+  }
+    #my-carousel .carousel-caption a {
+      color: white;
+    }

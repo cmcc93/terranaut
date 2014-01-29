@@ -6,10 +6,9 @@
   </div>
 
   <!-- span8 container -->
-  <div class="span8">
-    <h1>
-	  Terranaut: Your First Stop on the Road to Adventure
-	</h1>
+  <div class="span8 header-area">
+    <h1>Terranaut</h1>
+    <h2>Your First Stop on the Road to Adventure</h2>
   </div>
 
   <div class="span2">
@@ -18,7 +17,7 @@
 </div> <!-- end row fluid -->
 
 <!-- container bootstrap setup -->
-<div class="row-fluid clearfix">
+<!-- <div class="row-fluid clearfix">
 
   <div class="jumbotron">
     <h1>Terranaut!</h1>
@@ -26,4 +25,46 @@
     <p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p>
   </div>
 
-</div> <!-- end row fluid -->
+</div> --> <!-- end row fluid -->
+
+<!-- CAROUSEL -->
+<div class="row-fluid clearfix">
+  <div id="my-carousel" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="item active">
+        <%= image_tag('snowboarder-in-flight.png') %>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1><a href="#">156 cm Burton Custom Flying-V Restricted Snowboard</a></h1>
+            <p class="lead">Pat, Charleston, SC</p>
+            <!-- <a class="btn btn-large btn-primary" href="#">Sign up today</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag('sunset-surfer-water.png') %>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1><a href="#">6'8" Firewire Alternator Surfboard</a></h1>
+            <p class="lead">Sandy, San Francisco, CA</p>
+            <!-- <a class="btn btn-large btn-primary" href="#">Learn more</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag('kayaker-on-lake.png') %>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1><a href="#">Old Town Cayuga 110 Kayak</a></h1>
+            <p class="lead">Janet, Kansas City, MO</p>
+            <!-- <a class="btn btn-large btn-primary" href="#">Browse gallery</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="left carousel-control" href="#my-carousel" data-slide="prev">‹</a>
+    <a class="right carousel-control" href="#my-carousel" data-slide="next">›</a>
+
+  </div><!-- /.carousel -->
+
+</div> <!-- end row fluid
