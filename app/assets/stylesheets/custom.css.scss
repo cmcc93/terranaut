@@ -88,14 +88,15 @@ $fontVeryBig: 35px;
 }
 // carousel
 #my-carousel {
-  position: relative;
-  top: -110px;
+  position: absolute;
+  top: 50px;
 }
 #my-carousel .carousel-inner .item {
   margin: 0 auto;
 }
   #my-carousel img {
     width: 100%;
+    min-width: 883px;
     height: 750px;
   }
   #my-carousel .carousel-control {
