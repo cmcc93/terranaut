@@ -20,7 +20,9 @@
         </div>
         <button type="submit" class="btn btn-default search">Go</button>
       </form>
-      <li><a href="#">Login</a></li>
+      <li>
+        <%= link_to("Login", {:controller => 'sessions', :action => 'new'}) %>
+      </li>
       <li class="divider"></li>
       <li><a href="#">Create Account</a></li>
 
