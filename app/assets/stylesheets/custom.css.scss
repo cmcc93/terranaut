@@ -60,6 +60,7 @@ $fontVeryBig: 35px;
     text-align: center;
     font-size: $fontVeryBig;
     font-weight: bold;
+    margin-top: 55px;
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
   }
   .header-area h2 {
@@ -100,12 +101,61 @@ $fontVeryBig: 35px;
     height: 750px;
   }
   #my-carousel .carousel-control {
-    margin-top: 200px;
+    margin-top: 100px;
+    width: 50px;
   }
+    #my-carousel .carousel-control.right {
+      margin-right: 50px;
+    }
+    #my-carousel .carousel-control.left {
+      margin-left: 50px;
+    }
   #my-carousel .carousel-caption {
     margin-bottom: 100px;
     border-radius: 15px;
   }
+    #my-carousel .carousel-caption h1 {
+      font-size: $fontBig;
+    }
     #my-carousel .carousel-caption a {
       color: white;
     }
+#carousel-search {
+  position: relative;
+  margin-top: 75px;
+  min-width: 925px;
+}
+  #carousel-search .navbar-form {
+    display: inline-block;
+  }
+  #carousel-search .form-group {
+    display: inline-block;
+    min-width: 245px;
+  }
+  #carousel-search .form-control {
+    height: 34px;
+    margin-top: 0px;
+    width: 200px;
+  }
+  #carousel-search .search-box-group {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+    padding: 15px;
+    background: #333333;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 15px;
+    min-width: 947px;
+  }
+    #carousel-search .search-box-group .form-control {
+      margin-right: 5px;
+    }
+    #carousel-search .search-box-group .form-group {
+      min-width: 0px;;
+    }
+
+
+
+
