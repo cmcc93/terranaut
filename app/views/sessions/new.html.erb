@@ -1,20 +1,46 @@
+<% @page_title = "Login" %>
+
+<div class="row-fluid clearfix">
+  <div class="span3">
+    <!-- back link -->
+    <h3 class="general-back-link"><%= link_to("Back Home", {:controller => 'public', :action => 'list'}) %></h3>
+  </div> <!-- end span3 -->
+
+  <h1 id="page-banner" class="span6">
+    Sign In
+  </h1>
+
+  <!-- span3 -->
+  <div class="span3">
+  </div>
+  <!-- end span3 -->
+
+</div> <!-- end row fluid -->
+
 <!-- container bootstrap setup -->
 <div class="row-fluid clearfix">
   <div id="page-canvas" class="span10 offset1">
-    <div id="signin-wrapper">
-      <h1>Log in to Terranaut</h1>
-      <%= form_for(:session, url: sessions_path) do |f| %>
+    <div class="inner-wrapper">
+      <!-- new user form -->
+      <%= form_for(:session, url: sessions_path, html: {:class => "custom-form"}) do |f| %>
         <table>
           <tr>
-            <th><%= f.label :email %></th>
-            <td><%= f.text_field :email %></td>
+            <td><%= f.text_field :email, placeholder: "Email" %></td>
           <tr>  
-            <th><%= f.label :password %></th>
-            <td><%= f.password_field :password %></td>
+            <td><%= f.password_field :password, placeholder: "Password" %></td>
+          </tr>
+          <tr>
+            <td> </td>
+          </tr>
+          <tr>
+            <td class="submit-button">
+            <!-- <div class="submit-button"> -->
+              <%= f.submit "Sign In" %>
+            <!-- </div> -->
+            </td>
           </tr>
         </table>
-        <div class="form-buttons"><%= f.submit "Sign In" %></div>
       <% end %>
-    </div>
-  </div>
+    </div> <!-- end user-show-wrapper -->
+  </div> <!-- end page-canvas -->
 </div> <!-- end row fluid -->

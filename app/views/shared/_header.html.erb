@@ -7,13 +7,16 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="#">Terranaut</a>
+    <%= link_to("Terranaut", {:controller => 'public', :action => 'list'}, class: 'navbar-brand') %>
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse right-links" id="bs-example-navbar-collapse-1">
     
     <ul class="nav navbar-nav navbar-right">
+      <li>
+        <%= link_to("List Your Item", {:controller => 'users', :action => 'new'}) %>
+      </li>
       <form class="navbar-form navbar-right" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="What's your adventure?">
@@ -21,20 +24,21 @@
         <button type="submit" class="btn btn-default search">Go</button>
       </form>
       <li>
-        <%= link_to("Login", {:controller => 'sessions', :action => 'new'}) %>
+        <%= link_to("Sign In", {:controller => 'sessions', :action => 'new'}) %>
       </li>
       <li class="divider"></li>
-      <li><a href="#">Create Account</a></li>
+      <li>
+        <%= link_to("Create Account", {:controller => 'users', :action => 'new'}) %>
+      </li>
 
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
         <ul class="dropdown-menu">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Social</a></li>
-          <li><a href="#">FAQ's</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><%= link_to("About", {:controller => 'public', :action => 'about'}) %></li>
+          <li><%= link_to("Connect", {:controller => 'public', :action => 'connect'}) %></li>
+          <li><%= link_to("FAQ's", {:controller => 'public', :action => 'faq'}) %></li>
           <li class="divider"></li>
-          <li><a href="#">Legal</a></li>
+          <li><%= link_to("Legal", {:controller => 'public', :action => 'legal'}) %></li>
         </ul>
       </li>
     </ul>

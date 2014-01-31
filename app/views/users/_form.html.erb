@@ -1,0 +1,30 @@
+<%= error_messages_for(@user) %>
+
+<table summary="User form fields">
+  <tr>
+    <td><%= f.text_field :first_name, placeholder: "First Name" %></td>
+  </tr>
+  <tr>
+    <td><%= f.text_field :last_name, placeholder: "Last Name" %></td>
+  </tr>
+  <tr>
+    <td><%= f.text_field :email, placeholder: "Email" %></td>
+  </tr>
+  <tr>
+    <td><%= f.text_field :first_name, placeholder: "Username" %></td>
+  </tr>
+  <tr>
+    <td><%= f.text_field :password, placeholder: "Password" %></td>
+  </tr>
+  <tr>
+    <td><%= f.text_field :password_confirmation, placeholder: "Password Confirmation" %></td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <td class="submit-button">
+      <%= f.submit "Create Account" %>
+    </td>
+  </tr>
+</table>

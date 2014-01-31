@@ -1,0 +1,40 @@
+<% @page_title = "Show User" %>
+
+<div class="row-fluid clearfix">
+  <div class="span3">
+    <!-- back link -->
+    <h3 class="general-back-link"><%= link_to("Back Home", {:controller => 'public', :action => 'list'}) %></h3>
+  </div> <!-- end span3 -->
+
+  <h1 id="page-banner" class="span6">
+    Basic User Information
+  </h1>
+
+  <div class="span3" id="new-explanation-button">
+    <h2>
+      <%= link_to("Edit User Information", {:controller => 'users', :id => current_user.id, :action => 'edit'}) %>
+    </h2>
+  </div>
+</div> <!-- end row fluid -->
+
+<!-- container bootstrap setup -->
+<div class="row-fluid clearfix">
+  <div id="page-canvas" class="span10 offset1">
+    <div class="inner-wrapper">
+	  <table summary="Topic detail view">
+	    <tr>
+	      <th>Name</th>
+	      <td id="user-show"><%= @user.name %></td>
+	    </tr>
+	    <tr>
+	      <th>Email</th>
+	      <td id="user-show"><%= @user.email %></td>
+	    </tr>
+	    <tr>
+	      <th>Username</th>
+	      <td id="user-show"><%= @user.username %></td>
+	    </tr>
+	  </table>
+	</div> <!-- end inner-wrapper -->
+  </div> <!-- end page-canvas -->
+</div> <!-- end row fluid -->

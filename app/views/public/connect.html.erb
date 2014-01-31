@@ -1,0 +1,40 @@
+<% @page_title = "Social" %>
+
+<div class="row-fluid clearfix">
+  <div class="span3">
+    <!-- back link -->
+    <h3 class="general-back-link"><%= link_to("Back Home", {:controller => 'public', :action => 'list'}) %></h3>
+  </div> <!-- end span3 -->
+
+  <h1 id="page-banner" class="span6">
+    Connect
+  </h1>
+
+  <!-- span3 -->
+  <div class="span3">
+  </div>
+  <!-- end span3 -->
+
+</div> <!-- end row fluid -->
+
+<!-- container bootstrap setup -->
+<div class="row-fluid clearfix">
+  <div id="page-canvas" class="span10 offset1">
+    <div id="contact" class="inner-wrapper">
+      <h2>Email</h2>
+      <div id="icon-wrapper">
+        <h3><%= mail_to "terranaut@terranaut.com" %></h3>
+      </div> <!-- end icon-wrapper -->
+      <h2>Social</h2>
+      <div id="icon-wrapper">
+        <table summary="Topic detail view">
+          <tr>
+            <td><%= link_to image_tag('facebook.jpg', :url => 'http://www.facebook.com') %></td>
+            <td><%= link_to image_tag('google.jpg', :url => 'http://www.google.com') %></td>
+            <td><%= link_to image_tag('twitter.jpg', :url => 'http://www.twitter.com') %></td>
+          </tr>
+        </table>
+      </div> <!-- end icon-wrapper -->
+    </div> <!-- end inner-wrapper -->
+  </div> <!-- end page-canvas -->
+</div> <!-- end row fluid -->
